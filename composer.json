@@ -1,0 +1,16 @@
+{
+  "name": "PsychicPokerPlayer",
+  "license": "MIT",
+  "type": "project",
+  "description": "Psychic Poker Player",
+  "autoload": {
+      "psr-4": { "PPP\\": "src/PPP" }
+  },
+  "require": {
+  },
+  "require-dev": {
+  },
+  "config": {
+      "bin-dir": "bin"
+  }
+}
