@@ -32,6 +32,11 @@ class Card implements \PPP\Interfaces\CardInterface
             case 'K':
                 $this->rank = 13;
                 break;
+            case $this->rank < 10 && $this->rank > 1:
+                break;
+            default:
+                $this->rank = 0;
+                break; 
         }
 
         switch ($this->suit) {
@@ -47,6 +52,9 @@ class Card implements \PPP\Interfaces\CardInterface
             case 'S':
                 $this->suit = 4;
                 break;
+            default:
+                $this->suit = 0;
+                break; 
         }
     }
 
