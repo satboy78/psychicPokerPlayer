@@ -20,6 +20,7 @@ class Game implements HandRankings, \PPP\Interfaces\GameInterface
         $this->hand = new \PPP\FiveCards\Hand();
         $this->deck = new \PPP\FiveCards\Deck();
 
+        $i = 0;
         foreach ($parts as $part) {
             $card = new \PPP\FiveCards\Card($part);
             $this->cards[] = $card;
